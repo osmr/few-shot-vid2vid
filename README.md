@@ -48,6 +48,20 @@ For business inquiries, please visit our website and submit the form: [NVIDIA Re
 
 
 ## Getting Started
+
+### Testing repo
+```
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt -f https://download.pytorch.org/whl/cu113/torch_stable.html
+pip install git+https://github.com/NVIDIA/apex
+
+python scripts/download_datasets.py
+bash ./scripts/face/test_512.sh
+
+python scripts/download_flownet2.py
+bash ./scripts/face/train_g1_256.sh
+```
+
 ### Installation
 [**Note**] <b>This repo is now deprecated. Please refer to the new Imaginaire repo: https://github.com/NVlabs/imaginaire.</b>
 
